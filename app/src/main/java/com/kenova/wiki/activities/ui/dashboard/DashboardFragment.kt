@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import com.kenova.wiki.activities.R
+import com.kenova.wiki.R
 
 class DashboardFragment : Fragment() {
 
