@@ -1,9 +1,12 @@
 package com.kenova.wiki.activities
 
+import android.app.ActionBar
 import android.os.Bundle
 import android.os.PersistableBundle
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.kenova.wiki.R
+import kotlinx.android.synthetic.main.activity_article_detail.*
 
 class ArticleDetailActivity: AppCompatActivity() {
 
@@ -11,7 +14,18 @@ class ArticleDetailActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState, persistentState)
         setContentView(R.layout.activity_article_detail)
 
+        setSupportActionBar(toolbar)
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
+
+    }
+
+    override fun onContextItemSelected(item: MenuItem): Boolean {
+        if (item!!.itemId == R.id.home)
+        {
+            finish()
+        }
+        return true
     }
 
 }
