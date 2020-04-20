@@ -12,7 +12,8 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:theme="@style/AppToolbar"/>
     </com.google.android.material.appbar.AppBarLayout>
     <FrameLayout
         android:id="@+id/fragment_container"

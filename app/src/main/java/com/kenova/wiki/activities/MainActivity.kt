@@ -3,10 +3,6 @@ package com.kenova.wiki.activities
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
 import com.kenova.wiki.R
 import com.kenova.wiki.fragments.ExploreFragment
 import com.kenova.wiki.fragments.FavoritesFragment
@@ -43,6 +39,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        setSupportActionBar(toolbar)
 
         nav_view.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
 
